@@ -82,6 +82,60 @@ export const projects = [
         'The final presentation gives the client a clear view of the home identity, planning logic, and elevation direction before execution.',
     },
   },
+
+  {
+  id: 'smart-leads',
+  type: 'fullstack',
+  categories: ['fullstack'],
+  title: 'Smart Leads',
+  description: 'Full-stack lead management system with dashboard analytics, filtering, and workflow tracking.',
+  thumbnail: '/images/dashboard.jpg',
+  featured: true,
+  year: '2026',
+  tools: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT Auth'],
+
+  live: 'https://smart-leads-gilt.vercel.app',
+  github: 'https://github.com/faezur/smart-leads',
+
+  data: {
+    tagline: 'Built a full-stack lead management system with CRUD operations, filtering, dashboard analytics, and CSV export.',
+
+    problem:
+      'Managing leads manually becomes messy as data grows. There is no clear tracking, filtering, or visibility of lead status across the pipeline.',
+
+    solution:
+      'Smart Leads provides a centralized dashboard to manage, filter, and track leads with structured workflows and real-time updates.',
+
+    features: [
+      '• CRUD operations for lead management',
+      '• Advanced filtering and sorting system',
+      '• Dashboard analytics (total, new, qualified, lost)',
+      '• Status tracking and workflow updates',
+      '• CSV export functionality',
+      '• Clean and responsive UI for fast usage',
+    ],
+
+    techStack: ['MongoDB', 'Express.js', 'React', 'Node.js', 'JWT', 'Vercel'],
+
+    screenshots: [
+      { title: 'Dashboard Overview', image: '/images/dashboard-light.jpg' },
+      { title: 'Add Lead Form', image: '/images/add_lead.jpg' },
+      { title: 'Filters & Search', image: '/images/filter.jpg' },
+    ],
+
+    challenges:
+      'Handling dynamic filtering and maintaining consistent UI state while managing multiple lead statuses and user actions.',
+
+    architectureLogic:
+      'The system is designed around a simple business workflow — capturing, tracking, and converting leads through structured stages.',
+
+    visualization:
+      'Instead of raw data tables, the dashboard presents leads in a structured, easy-to-track format with clear status indicators.',
+
+    result:
+      'Improved lead tracking clarity and workflow management through a structured full-stack dashboard system.',
+  },
+}
 ]
 
 export function getProjectById(id) {
