@@ -46,7 +46,7 @@ function ImageGrid({ items = [], setOpen, setActiveImg }) {
   
 }
 
-function ArchitectureCase({ project }) {
+function ArchitectureCase({ project, setOpen, setActiveImg }) {
   const data = project.data
 
   return (
