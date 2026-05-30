@@ -18,10 +18,10 @@ export default function ProjectCard({ project, compact = false }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.45 }}
-      className="group soft-panel overflow-hidden rounded-[1.75rem] transition duration-300 hover:-translate-y-1 hover:border-cyan/40"
+      className="group soft-panel overflow-hidden rounded-[1.25rem] transition duration-300 hover:-translate-y-1 hover:border-cyan/40 sm:rounded-[1.75rem]"
     >
       <Link to={`/projects/${project.id}`} className="block h-full">
-        <div className="cursor-pointer relative aspect-[16/10] overflow-hidden bg-soft rounded-xl">
+        <div className="relative aspect-[16/10] cursor-pointer overflow-hidden rounded-xl bg-soft">
     
     <img
       src={project.thumbnail}
@@ -32,17 +32,17 @@ export default function ProjectCard({ project, compact = false }) {
 
     <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-transparent to-transparent opacity-90" />
 
-    <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-ink/70 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-cyan backdrop-blur-xl">
+    <span className="absolute left-3 top-3 max-w-[calc(100%-4.5rem)] truncate rounded-full border border-white/15 bg-ink/70 px-3 py-1 text-[9px] uppercase tracking-[0.12em] text-cyan backdrop-blur-xl sm:left-4 sm:top-4 sm:text-[10px] sm:tracking-[0.18em]">
       {categoryLabel}
     </span>
 
-    <span className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white text-ink transition group-hover:rotate-45">
+    <span className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-white text-ink transition group-hover:rotate-45 sm:right-4 sm:top-4 sm:h-10 sm:w-10">
       <ArrowUpRight className="h-4 w-4" />
     </span>
         </div>
-        <div className="flex h-full flex-col p-6">
-          <p className="text-xs uppercase tracking-[0.2em] text-white/40">{project.year || 'Case Study'}</p>
-          <h3 className="mt-3 font-display text-2xl font-bold leading-tight tracking-tight text-cream">
+        <div className="flex h-full flex-col p-5 sm:p-6">
+          <p className="text-[11px] uppercase tracking-[0.16em] text-white/40 sm:text-xs sm:tracking-[0.2em]">{project.year || 'Case Study'}</p>
+          <h3 className="mt-3 font-display text-xl font-bold leading-tight tracking-tight text-cream sm:text-2xl">
             {project.title}
           </h3>
           <p className="mt-3 text-sm leading-7 text-muted">

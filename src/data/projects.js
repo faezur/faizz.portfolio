@@ -72,8 +72,8 @@ export const projects = [
       solution:
         'The facade uses layered horizontal geometry, framed balcony zones, warm lighting pockets, and material contrast. The planning keeps movement direct and separates public and private spaces clearly.',
       drawings: [
-        { title: 'Ground Floor Plan', image: '/images/GF.png' },
-        { title: 'First Floor Plan', image: '/images/FF.png' },
+        { title: 'Ground Floor Plan', image: '/images/GF.jpg' },
+        { title: 'First Floor Plan', image: '/images/FF2.jpg' },
       ],
       visuals: [
         { title: 'Front Elevation', image: '/images/ELEVATION.png' },

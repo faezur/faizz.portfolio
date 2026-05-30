@@ -12,13 +12,13 @@ export default function Projects() {
   }, [activeType])
 
   return (
-    <main className="pb-24 pt-32">
+    <main className="pb-20 pt-28 md:pb-24 md:pt-32">
       <section className="section-shell">
-        <div className="glass-panel overflow-hidden rounded-[2rem] p-8 md:p-12">
+        <div className="glass-panel overflow-hidden rounded-[1.5rem] p-5 sm:p-8 md:rounded-[2rem] md:p-12">
           <p className="eyebrow">Project library</p>
           <div className="mt-4 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
-              <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-7xl">
+              <h1 className="font-display text-3xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-7xl">
                 Case studies, not just screenshots.
               </h1>
               <p className="mt-5 max-w-2xl text-sm leading-7 text-muted">

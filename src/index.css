@@ -106,8 +106,14 @@ textarea {
 }
 
 .section-shell {
-  width: min(1120px, calc(100% - 40px));
+  width: min(1120px, calc(100% - 32px));
   margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .section-shell {
+    width: min(1120px, calc(100% - 40px));
+  }
 }
 
 .eyebrow {
