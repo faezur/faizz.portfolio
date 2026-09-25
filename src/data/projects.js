@@ -174,7 +174,7 @@ export const projects = [
   thumbnail: '/images/Elevation2.png',
   featured: true,
   location: 'India',
-  year: '2024',
+  year: '2026',
 
   tools: [
     'AutoCAD',
